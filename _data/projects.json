@@ -1,0 +1,8 @@
+[
+    {
+      "id": "task-queue",
+      "title": "Distributed Task Queue",
+      "description": "Go + gRPC microservice handling async jobs with Redis & Kubernetes.",
+      "link": "https://github.com/yourusername/task-queue"
+    }
+]

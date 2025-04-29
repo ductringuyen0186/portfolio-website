@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# Eleventy output
+docs/
+
+# Environment files
+.env
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
