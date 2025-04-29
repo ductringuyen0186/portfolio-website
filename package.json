@@ -1,7 +1,7 @@
 {
   "name": "portfolio-11ty",
   "version": "1.0.0",
-  "description": "Static portfolio site with Eleventy and Tailwind",
+  "description": "Professional portfolio with Eleventy and Tailwind",
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"
