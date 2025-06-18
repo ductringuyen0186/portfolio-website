@@ -59,23 +59,23 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "distributed-task-queue",
-    title: "Distributed Task Queue System",
-    description: "High-performance task processing system with Go, Redis, and Kubernetes orchestration.",
-    longDescription: "A scalable distributed task queue system built with Go and gRPC. Features include job scheduling, retry mechanisms, dead letter queues, and horizontal scaling with Kubernetes. Uses Redis for job persistence and provides monitoring capabilities.",
-    technologies: ["Go", "gRPC", "Redis", "Kubernetes", "Docker", "PostgreSQL"],
-    githubUrl: "https://github.com/ductringuyen0186/distributed-task-queue",
-    imageUrl: "/images/task-queue.png",
+    id: "triton-digital-apis",
+    title: "Enterprise REST API Services",
+    description: "High-performance REST APIs handling 50,000+ daily transactions at Triton Digital.",
+    longDescription: "Developed and maintained enterprise-grade REST API services supporting over 50,000 daily transactions. Implemented performance optimizations reducing response times by 20% and achieved 99.9% uptime through containerized deployments with Kubernetes and OpenShift.",
+    technologies: ["Java", "Spring Boot", "Kotlin", "Kubernetes", "OpenShift", "ArgoCD", "MySQL"],
+    githubUrl: "https://github.com/ductringuyen0186/enterprise-api-services",
+    imageUrl: "/images/enterprise-api.png",
     featured: true,
     category: "backend",
     status: "completed",
-    startDate: "2024-01-15",
-    endDate: "2024-03-20",
+    startDate: "2022-07-01",
+    endDate: "2024-12-01",
     highlights: [
-      "Handles 10,000+ jobs per second",
-      "99.9% uptime with automatic failover",
-      "Kubernetes-native deployment",
-      "Comprehensive monitoring"
+      "50,000+ daily transactions",
+      "20% response time improvement",
+      "99.9% application uptime",
+      "Spring Batch performance optimization"
     ]
   },
   {
@@ -100,23 +100,23 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "e-commerce-api",
-    title: "E-Commerce Microservices API",
-    description: "Scalable e-commerce backend with microservices architecture using Go and Docker.",
-    longDescription: "A comprehensive e-commerce platform built with microservices architecture. Features user management, product catalog, order processing, payment integration, and inventory management. Each service is containerized and can be deployed independently.",
-    technologies: ["Go", "Docker", "PostgreSQL", "Redis", "RabbitMQ", "JWT", "Stripe API"],
-    githubUrl: "https://github.com/ductringuyen0186/ecommerce-microservices",
-    imageUrl: "/images/ecommerce-api.png",
+    id: "mobile-game-bobaface",
+    title: "Mobile Game Development",
+    description: "Engaging mobile game with physics-based mechanics deployed on iOS and Android platforms.",
+    longDescription: "Engineered game mechanics and physics objects for an engaging mobile game experience at Bobaface. Collaborated with artists and UI designers to create visually appealing, user-friendly interfaces. Successfully deployed on both iOS App Store and Google Play Store.",
+    technologies: ["Unity", "C#", "iOS", "Android", "Game Physics", "UI/UX Design"],
+    githubUrl: "https://github.com/ductringuyen0186/mobile-game-project",
+    imageUrl: "/images/mobile-game.png",
     featured: false,
-    category: "backend",
+    category: "mobile",
     status: "completed",
-    startDate: "2023-08-01",
-    endDate: "2023-11-30",
+    startDate: "2021-04-01",
+    endDate: "2022-05-01",
     highlights: [
-      "Microservices architecture",
-      "Event-driven communication",
-      "Payment processing integration",
-      "Scalable inventory management"
+      "Physics-based game mechanics",
+      "Cross-platform deployment",
+      "10% increase in session length",
+      "Collaborative UI/UX design"
     ]
   },
   {
