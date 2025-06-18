@@ -17,13 +17,54 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "task-queue",
-    title: "Distributed Task Queue",
-    description: "Go + gRPC microservice handling async jobs with Redis & Kubernetes.",
-    longDescription: "A high-performance distributed task queue system built with Go and gRPC. Features include job scheduling, retry mechanisms, dead letter queues, and horizontal scaling with Kubernetes. Uses Redis for job persistence and provides a web dashboard for monitoring.",
+    id: "salon-hub-api",
+    title: "Salon Hub API",
+    description: "Comprehensive salon management API with booking system, staff management, and payment processing.",
+    longDescription: "A robust backend API for salon management featuring appointment booking, staff scheduling, customer management, service catalog, and integrated payment processing. Built with modern architecture patterns and comprehensive testing.",
+    technologies: ["Node.js", "Express", "PostgreSQL", "JWT", "Stripe API", "Jest", "Docker"],
+    githubUrl: "https://github.com/ductringuyen0186/salon-hub-api",
+    liveUrl: "https://salon-hub-api.herokuapp.com",
+    imageUrl: "/images/salon-hub-api.png",
+    featured: true,
+    category: "backend",
+    status: "completed",
+    startDate: "2024-06-01",
+    endDate: "2024-08-15",
+    highlights: [
+      "RESTful API with comprehensive endpoints",
+      "Integrated payment processing with Stripe",
+      "Role-based authentication system",
+      "Automated appointment scheduling"
+    ]
+  },
+  {
+    id: "salon-hub-ui-v2",
+    title: "Salon Hub UI v2",
+    description: "Modern React frontend for salon management with intuitive booking interface and admin dashboard.",
+    longDescription: "A sleek and responsive frontend application for salon management. Features include customer booking interface, staff dashboard, appointment management, and comprehensive admin panel. Built with React and modern UI/UX principles.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "React Query", "React Router", "Axios"],
+    githubUrl: "https://github.com/ductringuyen0186/salon-hub-ui-v2",
+    liveUrl: "https://salon-hub-ui.netlify.app",
+    imageUrl: "/images/salon-hub-ui.png",
+    featured: true,
+    category: "web",
+    status: "completed",
+    startDate: "2024-08-16",
+    endDate: "2024-10-30",
+    highlights: [
+      "Responsive design for all devices",
+      "Real-time appointment updates",
+      "Intuitive admin dashboard",
+      "Seamless payment integration"
+    ]
+  },
+  {
+    id: "distributed-task-queue",
+    title: "Distributed Task Queue System",
+    description: "High-performance task processing system with Go, Redis, and Kubernetes orchestration.",
+    longDescription: "A scalable distributed task queue system built with Go and gRPC. Features include job scheduling, retry mechanisms, dead letter queues, and horizontal scaling with Kubernetes. Uses Redis for job persistence and provides monitoring capabilities.",
     technologies: ["Go", "gRPC", "Redis", "Kubernetes", "Docker", "PostgreSQL"],
-    githubUrl: "https://github.com/yourusername/task-queue",
-    liveUrl: "https://task-queue-demo.example.com",
+    githubUrl: "https://github.com/ductringuyen0186/distributed-task-queue",
     imageUrl: "/images/task-queue.png",
     featured: true,
     category: "backend",
@@ -33,8 +74,8 @@ export const projects: Project[] = [
     highlights: [
       "Handles 10,000+ jobs per second",
       "99.9% uptime with automatic failover",
-      "Real-time monitoring dashboard",
-      "Kubernetes-native deployment"
+      "Kubernetes-native deployment",
+      "Comprehensive monitoring"
     ]
   },
   {
@@ -46,7 +87,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/ductringuyen0186/portfolio-website",
     liveUrl: "https://ducnguyen.dev",
     imageUrl: "/images/portfolio.png",
-    featured: true,
+    featured: false,
     category: "web",
     status: "completed",
     startDate: "2024-12-01",

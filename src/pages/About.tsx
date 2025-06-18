@@ -3,31 +3,31 @@ import { Download, MapPin, Calendar } from 'lucide-react';
 const About = () => {
   const experiences = [
     {
-      title: 'Senior Backend Engineer',
-      company: 'Tech Company',
+      title: 'Full-Stack Developer',
+      company: 'Freelance Projects',
       period: '2023 - Present',
-      description: 'Leading development of distributed systems and microservices architecture.',
+      description: 'Developing comprehensive web applications including salon management systems with React, Node.js, and modern database technologies.',
     },
     {
-      title: 'Backend Engineer',
-      company: 'Startup Inc.',
-      period: '2021 - 2023',
-      description: 'Built scalable APIs and implemented cloud infrastructure solutions.',
+      title: 'Software Engineer',
+      company: 'Various Projects',
+      period: '2022 - 2023',
+      description: 'Built scalable web applications, RESTful APIs, and implemented modern frontend solutions with focus on user experience.',
     },
     {
-      title: 'Software Developer',
-      company: 'Development Agency',
-      period: '2020 - 2021',
-      description: 'Developed full-stack applications and maintained legacy systems.',
+      title: 'Junior Developer',
+      company: 'Learning & Development',
+      period: '2021 - 2022',
+      description: 'Focused on mastering full-stack development, contributing to open source projects, and building personal portfolio applications.',
     },
   ];
 
   const skills = [
-    { category: 'Languages', items: ['Go', 'Python', 'JavaScript/TypeScript', 'Java', 'SQL'] },
-    { category: 'Frameworks', items: ['Gin', 'FastAPI', 'React', 'Node.js', 'Spring Boot'] },
-    { category: 'Databases', items: ['PostgreSQL', 'Redis', 'MongoDB', 'Elasticsearch'] },
-    { category: 'Cloud & DevOps', items: ['AWS', 'Kubernetes', 'Docker', 'Terraform', 'CI/CD'] },
-    { category: 'Tools', items: ['Git', 'gRPC', 'RabbitMQ', 'Prometheus', 'Grafana'] },
+    { category: 'Languages', items: ['JavaScript/TypeScript', 'Python', 'HTML/CSS', 'SQL', 'Java'] },
+    { category: 'Frontend', items: ['React', 'Tailwind CSS', 'React Query', 'React Router', 'Responsive Design'] },
+    { category: 'Backend', items: ['Node.js', 'Express', 'RESTful APIs', 'JWT Authentication', 'Stripe Integration'] },
+    { category: 'Databases', items: ['PostgreSQL', 'MongoDB', 'Redis', 'Database Design'] },
+    { category: 'Tools & DevOps', items: ['Git', 'Docker', 'Heroku', 'Netlify', 'Jest', 'Postman'] },
   ];
 
   return (
@@ -50,7 +50,7 @@ const About = () => {
 
             <div className="space-y-6">
               <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full shadow-sm">
-                <span className="text-sm font-semibold text-slate-700">Backend Engineer</span>
+                <span className="text-sm font-semibold text-slate-700">Software Engineer</span>
               </div>
 
               <h1 className="text-6xl font-bold text-slate-900 mb-6 text-shadow-sm">About Me</h1>
@@ -58,21 +58,21 @@ const About = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-slate-600">
                 <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-xl">
                   <MapPin size={20} className="text-blue-600" />
-                  <span className="font-medium">San Francisco, CA</span>
+                  <span className="font-medium">Seattle, WA</span>
                 </div>
                 <div className="flex items-center space-x-3 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-xl">
                   <Calendar size={20} className="text-purple-600" />
-                  <span className="font-medium">5+ Years Experience</span>
+                  <span className="font-medium">3+ Years Experience</span>
                 </div>
               </div>
             </div>
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
-              I'm a passionate backend engineer with a strong focus on building{' '}
-              <span className="font-semibold text-slate-800">distributed systems</span> and{' '}
-              <span className="font-semibold text-slate-800">scalable architectures</span>.
-              I love solving complex problems and creating efficient, reliable software solutions
-              that can handle millions of users.
+              I'm a passionate software engineer based in Seattle with expertise in{' '}
+              <span className="font-semibold text-slate-800">full-stack development</span> and{' '}
+              <span className="font-semibold text-slate-800">modern web applications</span>.
+              I love creating scalable solutions that deliver exceptional user experiences
+              and solve real-world problems.
             </p>
 
             <a
@@ -167,10 +167,10 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">What drives me</h3>
                 <p className="text-slate-600 leading-relaxed text-lg">
-                  I'm passionate about creating software that makes a real impact. Whether it's
-                  optimizing a database query to save milliseconds or architecting a system that
-                  can scale to millions of users, I find joy in the technical challenges and the
-                  problem-solving process.
+                  I'm passionate about creating web applications that solve real business problems.
+                  From building intuitive user interfaces to designing robust APIs, I enjoy the
+                  entire development process and the satisfaction of delivering solutions that
+                  users love and businesses depend on.
                 </p>
               </div>
 
@@ -180,9 +180,9 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-green-600 transition-colors duration-300">When I'm not coding</h3>
                 <p className="text-slate-600 leading-relaxed text-lg">
-                  You can find me exploring new technologies, contributing to open source projects,
-                  or enjoying the outdoors. I believe in continuous learning and staying up-to-date
-                  with the latest trends in software engineering and distributed systems.
+                  You can find me exploring Seattle's tech scene, learning new frameworks and tools,
+                  or enjoying the Pacific Northwest outdoors. I believe in continuous learning and
+                  staying current with modern web development practices and emerging technologies.
                 </p>
               </div>
             </div>

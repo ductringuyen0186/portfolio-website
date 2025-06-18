@@ -36,12 +36,13 @@ const Home = () => {
               </h1>
 
               <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light">
-                Backend Engineer specializing in{' '}
-                <span className="font-semibold text-slate-800">distributed systems</span>,{' '}
-                <span className="font-semibold text-slate-800">microservices</span>, and{' '}
-                <span className="font-semibold text-slate-800">cloud architecture</span>.
+                Software Engineer based in{' '}
+                <span className="font-semibold text-slate-800">Seattle, WA</span>, specializing in{' '}
+                <span className="font-semibold text-slate-800">full-stack development</span>,{' '}
+                <span className="font-semibold text-slate-800">API design</span>, and{' '}
+                <span className="font-semibold text-slate-800">modern web applications</span>.
                 <br className="hidden md:block" />
-                I build scalable solutions that power modern applications.
+                I create scalable solutions that deliver exceptional user experiences.
               </p>
             </div>
 

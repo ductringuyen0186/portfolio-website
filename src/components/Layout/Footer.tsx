@@ -37,12 +37,12 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-white">Duc Nguyen</span>
-                <span className="text-xs text-slate-400 font-medium">Backend Engineer</span>
+                <span className="text-xs text-slate-400 font-medium">Software Engineer • Seattle, WA</span>
               </div>
             </div>
             <p className="text-slate-300 text-sm max-w-md leading-relaxed">
-              Backend engineer specializing in distributed systems, microservices, and cloud architecture.
-              Passionate about building scalable and reliable software solutions.
+              Software engineer specializing in full-stack development and modern web applications.
+              Passionate about creating scalable solutions that deliver exceptional user experiences.
             </p>
           </div>
 
