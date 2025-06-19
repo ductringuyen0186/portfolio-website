@@ -6,9 +6,9 @@ const Home = () => {
   const featuredProjects = getFeaturedProjects();
 
   const skills = [
-    { name: 'Backend Development', icon: Code, description: 'Go, Python, Node.js' },
-    { name: 'Databases', icon: Database, description: 'PostgreSQL, Redis, MongoDB' },
-    { name: 'Cloud & DevOps', icon: Cloud, description: 'AWS, Kubernetes, Docker' },
+    { name: 'Backend Development', icon: Code, description: 'Java, Kotlin, Go, Node.js, Python' },
+    { name: 'Cloud & DevOps', icon: Cloud, description: 'AWS, Kubernetes, Docker, OpenShift, ArgoCD' },
+    { name: 'Frontend & UI', icon: Code, description: 'React, TypeScript, Tailwind CSS' },
   ];
 
   return (
@@ -36,13 +36,8 @@ const Home = () => {
               </h1>
 
               <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light">
-                Software Engineer based in{' '}
-                <span className="font-semibold text-slate-800">Seattle, WA</span>, specializing in{' '}
-                <span className="font-semibold text-slate-800">full-stack development</span>,{' '}
-                <span className="font-semibold text-slate-800">API design</span>, and{' '}
-                <span className="font-semibold text-slate-800">modern web applications</span>.
-                <br className="hidden md:block" />
-                I create scalable solutions that deliver exceptional user experiences.
+                Software Engineer based in <span className="font-semibold text-slate-800">Seattle, WA</span>, specializing in <span className="font-semibold text-slate-800">backend systems</span>, <span className="font-semibold text-slate-800">cloud infrastructure</span>, and <span className="font-semibold text-slate-800">modern web applications</span>.<br className="hidden md:block" />
+                I deliver scalable, high-performance solutions for enterprise and consumer applications.
               </p>
             </div>
 

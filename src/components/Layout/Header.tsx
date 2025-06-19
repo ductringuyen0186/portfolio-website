@@ -27,7 +27,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-xl text-slate-900 group-hover:text-blue-600 transition-colors duration-300">Duc Nguyen</span>
-              <span className="text-xs text-slate-500 font-medium">Backend Engineer</span>
+              <span className="text-xs text-slate-500 font-medium">Software Engineer</span>
             </div>
           </Link>
 

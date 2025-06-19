@@ -11,7 +11,7 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/ductringuyen',
+      href: 'https://linkedin.com/in/duc-nguyen-33716b1b6/',
       icon: Linkedin,
     },
     {
@@ -41,8 +41,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-slate-300 text-sm max-w-md leading-relaxed">
-              Software engineer specializing in full-stack development and modern web applications.
-              Passionate about creating scalable solutions that deliver exceptional user experiences.
+              Software engineer specializing in backend systems, cloud infrastructure, and modern web applications. Passionate about building scalable, high-performance solutions and driving business value through technology.
             </p>
           </div>
 
