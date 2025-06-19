@@ -3,31 +3,31 @@ import { Download, MapPin, Calendar } from 'lucide-react';
 const About = () => {
   const experiences = [
     {
-      title: 'Full-Stack Developer',
-      company: 'Freelance Projects',
-      period: '2023 - Present',
+      title: 'Software Engineer',
+      company: 'Triton Digital',
+      period: '2022 - Present',
       description: 'Developing comprehensive web applications including salon management systems with React, Node.js, and modern database technologies.',
     },
     {
-      title: 'Software Engineer',
-      company: 'Various Projects',
-      period: '2022 - 2023',
+      title: 'Game Developer',
+      company: 'Bobaface',
+      period: '2021-2022',
       description: 'Built scalable web applications, RESTful APIs, and implemented modern frontend solutions with focus on user experience.',
     },
     {
-      title: 'Junior Developer',
-      company: 'Learning & Development',
-      period: '2021 - 2022',
+      title: 'Software Developer',
+      company: 'Boise State University',
+      period: '2020 - 2022',
       description: 'Focused on mastering full-stack development, contributing to open source projects, and building personal portfolio applications.',
     },
   ];
 
   const skills = [
-    { category: 'Languages', items: ['JavaScript/TypeScript', 'Python', 'HTML/CSS', 'SQL', 'Java'] },
+    { category: 'Languages', items: ['Python', 'Kotlinb', 'SQL', 'Java'] },
     { category: 'Frontend', items: ['React', 'Tailwind CSS', 'React Query', 'React Router', 'Responsive Design'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'RESTful APIs', 'JWT Authentication', 'Stripe Integration'] },
-    { category: 'Databases', items: ['PostgreSQL', 'MongoDB', 'Redis', 'Database Design'] },
-    { category: 'Tools & DevOps', items: ['Git', 'Docker', 'Heroku', 'Netlify', 'Jest', 'Postman'] },
+    { category: 'Backend', items: ['RESTful APIs', 'JWT Authentication', ''] },
+    { category: 'Databases', items: ['MySQL', 'MongoDB', 'Database Design'] },
+    { category: 'Tools & DevOps', items: ['Git', 'Docker', 'Netlify', 'Postman'] },
   ];
 
   return (
