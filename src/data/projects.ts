@@ -62,8 +62,8 @@ export const projects: Project[] = [
     id: "triton-digital-apis",
     title: "Enterprise REST API Services",
     description: "High-performance REST APIs handling 50,000+ daily transactions at Triton Digital.",
-    longDescription: "Developed and maintained enterprise-grade REST API services supporting over 50,000 daily transactions. Implemented performance optimizations reducing response times by 20% and achieved 99.9% uptime through containerized deployments with Kubernetes and OpenShift.",
-    technologies: ["Java", "Spring Boot", "Kotlin", "Kubernetes", "OpenShift", "ArgoCD", "MySQL"],
+    longDescription: "Developed and maintained enterprise-grade REST API services supporting over 50,000 daily transactions. Reduced response times by 20% and achieved 99.9% uptime through containerized deployments with Kubernetes, OpenShift, and ArgoCD. Reengineered legacy code into Spring Batch framework improving performance by 25% and reducing processing time by 40%. Implemented multi-currency support expanding customer base by 15%.",
+    technologies: ["Java", "Spring Boot", "Kotlin", "Kubernetes", "OpenShift", "ArgoCD", "MySQL", "Grafana", "Jenkins"],
     githubUrl: "https://github.com/ductringuyen0186/enterprise-api-services",
     imageUrl: "/images/enterprise-api.png",
     featured: true,
@@ -72,10 +72,12 @@ export const projects: Project[] = [
     startDate: "2022-07-01",
     endDate: "2024-12-01",
     highlights: [
-      "50,000+ daily transactions",
+      "50,000+ daily transactions supported",
       "20% response time improvement",
-      "99.9% application uptime",
-      "Spring Batch performance optimization"
+      "99.9% application uptime achieved",
+      "25% performance improvement with Spring Batch",
+      "40% reduction in processing time",
+      "15% customer base expansion with multi-currency support"
     ]
   },
   {
