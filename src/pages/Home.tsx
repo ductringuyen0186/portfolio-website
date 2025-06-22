@@ -55,7 +55,7 @@ const Home = () => {
               >
                 <span>About Me</span>
               </Link>
-            </div>
+            </div> 
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto pt-16">
