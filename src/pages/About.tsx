@@ -76,7 +76,7 @@ const About = () => {
             </p>
 
             <a
-              href="/resume.pdf"
+              href="/portfolio-website/resume.pdf"
               target="_blank"
               className="btn-primary text-lg px-8 py-4 group"
             >

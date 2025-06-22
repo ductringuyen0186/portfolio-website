@@ -8,7 +8,7 @@ const Home = () => {
   const skills = [
     { name: 'Backend Development', icon: Code, description: 'Java, Kotlin, Go, Node.js, Python' },
     { name: 'Cloud & DevOps', icon: Cloud, description: 'AWS, Kubernetes, Docker, OpenShift, ArgoCD' },
-    { name: 'Frontend & UI', icon: Code, description: 'React, TypeScript, Tailwind CSS' },
+    { name: 'Monitoring & Tools', icon: Database, description: 'MySQL, Grafana, Jenkins, GitHub Actions' },
   ];
 
   return (
@@ -24,8 +24,8 @@ const Home = () => {
           <div className="text-center space-y-12 animate-fade-in-up">
             <div className="space-y-8">
               <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-full shadow-sm">
-                <div className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-                <span className="text-sm font-medium text-slate-700">Available for new opportunities</span>
+                <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></div>
+                <span className="text-sm font-medium text-slate-700">Software Engineer at Triton Digital</span>
               </div>
 
               <h1 className="text-6xl md:text-8xl font-bold text-slate-900 mb-8 text-shadow-sm">

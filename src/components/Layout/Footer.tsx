@@ -65,7 +65,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/resume.pdf" target="_blank" className="text-slate-300 hover:text-blue-400 transition-all duration-300 text-sm font-medium hover:translate-x-1 inline-block">
+                <a href="/portfolio-website/resume.pdf" target="_blank" className="text-slate-300 hover:text-blue-400 transition-all duration-300 text-sm font-medium hover:translate-x-1 inline-block">
                   Resume
                 </a>
               </li>
