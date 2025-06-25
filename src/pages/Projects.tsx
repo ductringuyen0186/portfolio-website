@@ -150,14 +150,16 @@ const Projects = () => {
 
                     {/* Action Links */}
                     <div className="flex space-x-3 pt-4 border-t border-slate-100">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-ghost text-sm group/link"
-                      >
-                        <span>View Code</span>
-                      </a>
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-ghost text-sm group/link"
+                        >
+                          <span>View Code</span>
+                        </a>
+                      )}
                       {project.liveUrl && (
                         <a
                           href={project.liveUrl}
@@ -166,6 +168,16 @@ const Projects = () => {
                           className="btn-ghost text-sm group/link"
                         >
                           <span>Live Demo</span>
+                        </a>
+                      )}
+                      {project.demoUrl && (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-ghost text-sm group/link"
+                        >
+                          <span>Video Demo</span>
                         </a>
                       )}
                     </div>

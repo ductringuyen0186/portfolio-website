@@ -4,8 +4,9 @@ export interface Project {
   description: string;
   longDescription?: string;
   technologies: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
+  demoUrl?: string;
   imageUrl?: string;
   featured: boolean;
   category: 'web' | 'mobile' | 'backend' | 'fullstack' | 'other';
@@ -59,28 +60,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "triton-digital-apis",
-    title: "Enterprise REST API Services",
-    description: "High-performance REST APIs handling 50,000+ daily transactions at Triton Digital.",
-    longDescription: "Developed and maintained enterprise-grade REST API services supporting over 50,000 daily transactions. Reduced response times by 20% and achieved 99.9% uptime through containerized deployments with Kubernetes, OpenShift, and ArgoCD. Reengineered legacy code into Spring Batch framework improving performance by 25% and reducing processing time by 40%. Implemented multi-currency support expanding customer base by 15%.",
-    technologies: ["Java", "Spring Boot", "Kotlin", "Kubernetes", "OpenShift", "ArgoCD", "MySQL", "Grafana", "Jenkins"],
-    githubUrl: "https://github.com/ductringuyen0186/enterprise-api-services",
-    imageUrl: "/images/enterprise-api.png",
-    featured: true,
-    category: "backend",
-    status: "completed",
-    startDate: "2022-07-01",
-    endDate: "2024-12-01",
-    highlights: [
-      "50,000+ daily transactions supported",
-      "20% response time improvement",
-      "99.9% application uptime achieved",
-      "25% performance improvement with Spring Batch",
-      "40% reduction in processing time",
-      "15% customer base expansion with multi-currency support"
-    ]
-  },
-  {
     id: "portfolio-website",
     title: "React Portfolio Website",
     description: "Modern portfolio website built with React, TypeScript, and Tailwind CSS.",
@@ -107,8 +86,7 @@ export const projects: Project[] = [
     description: "Engaging mobile game with physics-based mechanics deployed on iOS and Android platforms.",
     longDescription: "Engineered game mechanics and physics objects for an engaging mobile game experience at Bobaface. Collaborated with artists and UI designers to create visually appealing, user-friendly interfaces. Successfully deployed on both iOS App Store and Google Play Store.",
     technologies: ["Unity", "C#", "iOS", "Android", "Game Physics", "UI/UX Design"],
-    githubUrl: "https://github.com/ductringuyen0186/mobile-game-project",
-    imageUrl: "/images/mobile-game.png",
+    demoUrl: "https://portfolioductringuyen.s3.us-west-2.amazonaws.com/brunchface-demo.mp4",
     featured: false,
     category: "mobile",
     status: "completed",
@@ -119,66 +97,6 @@ export const projects: Project[] = [
       "Cross-platform deployment",
       "10% increase in session length",
       "Collaborative UI/UX design"
-    ]
-  },
-  {
-    id: "chat-application",
-    title: "Real-time Chat Application",
-    description: "WebSocket-based chat app with React frontend and Node.js backend.",
-    longDescription: "A real-time chat application supporting multiple rooms, private messaging, file sharing, and user presence indicators. Built with Socket.io for real-time communication and MongoDB for message persistence.",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT"],
-    githubUrl: "https://github.com/ductringuyen0186/realtime-chat",
-    liveUrl: "https://chat-app-demo.example.com",
-    imageUrl: "/images/chat-app.png",
-    featured: false,
-    category: "fullstack",
-    status: "completed",
-    startDate: "2023-05-01",
-    endDate: "2023-07-15",
-    highlights: [
-      "Real-time messaging",
-      "Multiple chat rooms",
-      "File sharing capability",
-      "User presence indicators"
-    ]
-  },
-  {
-    id: "monitoring-dashboard",
-    title: "Infrastructure Monitoring Dashboard",
-    description: "Custom monitoring solution with Prometheus, Grafana, and Go services.",
-    longDescription: "A comprehensive monitoring solution for infrastructure and applications. Collects metrics from various sources, provides alerting capabilities, and displays real-time dashboards. Built with custom Go services for metric collection and processing.",
-    technologies: ["Go", "Prometheus", "Grafana", "InfluxDB", "Docker", "Kubernetes"],
-    githubUrl: "https://github.com/ductringuyen0186/monitoring-dashboard",
-    imageUrl: "/images/monitoring.png",
-    featured: false,
-    category: "backend",
-    status: "in-progress",
-    startDate: "2024-10-01",
-    highlights: [
-      "Custom metric collectors",
-      "Real-time alerting",
-      "Multi-source data aggregation",
-      "Kubernetes integration"
-    ]
-  },
-  {
-    id: "mobile-expense-tracker",
-    title: "Mobile Expense Tracker",
-    description: "React Native app for personal finance management with cloud sync.",
-    longDescription: "A mobile application for tracking personal expenses with categories, budgets, and financial insights. Features cloud synchronization, offline support, and detailed analytics. Built with React Native for cross-platform compatibility.",
-    technologies: ["React Native", "TypeScript", "Firebase", "Redux", "Chart.js"],
-    githubUrl: "https://github.com/ductringuyen0186/expense-tracker-mobile",
-    imageUrl: "/images/expense-tracker.png",
-    featured: false,
-    category: "mobile",
-    status: "completed",
-    startDate: "2023-02-01",
-    endDate: "2023-04-30",
-    highlights: [
-      "Cross-platform mobile app",
-      "Offline-first architecture",
-      "Cloud synchronization",
-      "Financial analytics"
     ]
   }
 ];
