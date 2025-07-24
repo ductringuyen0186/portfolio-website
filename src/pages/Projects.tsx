@@ -1,9 +1,36 @@
 import { useState, useMemo } from 'react';
 import { projects } from '../data/projects';
+import VideoPlayer from '../components/VideoPlayer';
+import VideoPreview from '../components/VideoPreview';
 
 const Projects = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [videoPlayer, setVideoPlayer] = useState<{
+    isOpen: boolean;
+    videoUrl: string;
+    title: string;
+  }>({
+    isOpen: false,
+    videoUrl: '',
+    title: '',
+  });
+
+  const openVideoPlayer = (videoUrl: string, title: string) => {
+    setVideoPlayer({
+      isOpen: true,
+      videoUrl,
+      title,
+    });
+  };
+
+  const closeVideoPlayer = () => {
+    setVideoPlayer({
+      isOpen: false,
+      videoUrl: '',
+      title: '',
+    });
+  };
 
   // Filter projects based on search and filters
   const filteredProjects = useMemo(() => {
@@ -118,16 +145,24 @@ const Projects = () => {
                     </div>
 
                     {/* Project Image Placeholder */}
-                    <div className="w-full h-40 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-purple-50 transition-all duration-500">
-                      <div className="text-slate-400 text-center">
-                        <div className="w-12 h-12 bg-slate-300 rounded-lg mx-auto mb-2 flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-500">
-                          <span className="text-lg font-bold text-slate-500 group-hover:text-blue-600">
-                            {project.title.charAt(0)}
-                          </span>
+                    {project.demoUrl ? (
+                      <VideoPreview
+                        title={`${project.title} Demo`}
+                        onClick={() => openVideoPlayer(project.demoUrl!, project.title)}
+                        className="w-full h-40"
+                      />
+                    ) : (
+                      <div className="w-full h-40 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-purple-50 transition-all duration-500">
+                        <div className="text-slate-400 text-center">
+                          <div className="w-12 h-12 bg-slate-300 rounded-lg mx-auto mb-2 flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-500">
+                            <span className="text-lg font-bold text-slate-500 group-hover:text-blue-600">
+                              {project.title.charAt(0)}
+                            </span>
+                          </div>
+                          <p className="text-xs font-medium">Preview</p>
                         </div>
-                        <p className="text-xs font-medium">Preview</p>
                       </div>
-                    </div>
+                    )}
 
                     <p className="text-slate-600 text-sm leading-relaxed line-clamp-3">{project.description}</p>
 
@@ -160,25 +195,13 @@ const Projects = () => {
                           <span>View Code</span>
                         </a>
                       )}
-                      {project.liveUrl && (
-                        <a
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-ghost text-sm group/link"
-                        >
-                          <span>Live Demo</span>
-                        </a>
-                      )}
                       {project.demoUrl && (
-                        <a
-                          href={project.demoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          onClick={() => openVideoPlayer(project.demoUrl!, project.title)}
                           className="btn-ghost text-sm group/link"
                         >
                           <span>Video Demo</span>
-                        </a>
+                        </button>
                       )}
                     </div>
                   </div>
@@ -209,6 +232,14 @@ const Projects = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Player Modal */}
+      <VideoPlayer
+        videoUrl={videoPlayer.videoUrl}
+        title={videoPlayer.title}
+        isOpen={videoPlayer.isOpen}
+        onClose={closeVideoPlayer}
+      />
     </div>
   );
 };

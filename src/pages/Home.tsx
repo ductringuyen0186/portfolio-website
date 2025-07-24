@@ -1,9 +1,37 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code, Database, Cloud, Github, ExternalLink } from 'lucide-react';
+import { ArrowRight, Code, Database, Cloud, Github } from 'lucide-react';
 import { getFeaturedProjects } from '../data/projects';
+import VideoPlayer from '../components/VideoPlayer';
+import VideoPreview from '../components/VideoPreview';
 
 const Home = () => {
   const featuredProjects = getFeaturedProjects();
+  const [videoPlayer, setVideoPlayer] = useState<{
+    isOpen: boolean;
+    videoUrl: string;
+    title: string;
+  }>({
+    isOpen: false,
+    videoUrl: '',
+    title: '',
+  });
+
+  const openVideoPlayer = (videoUrl: string, title: string) => {
+    setVideoPlayer({
+      isOpen: true,
+      videoUrl,
+      title,
+    });
+  };
+
+  const closeVideoPlayer = () => {
+    setVideoPlayer({
+      isOpen: false,
+      videoUrl: '',
+      title: '',
+    });
+  };
 
   const skills = [
     { name: 'Backend Development', icon: Code, description: 'Java, Kotlin, Go, Node.js, Python' },
@@ -144,16 +172,24 @@ const Home = () => {
                   </div>
 
                   {/* Project Image Placeholder */}
-                  <div className="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-purple-50 transition-all duration-500">
-                    <div className="text-slate-400 text-center">
-                      <div className="w-16 h-16 bg-slate-300 rounded-xl mx-auto mb-3 flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-500">
-                        <span className="text-2xl font-bold text-slate-500 group-hover:text-blue-600">
-                          {project.title.charAt(0)}
-                        </span>
+                  {project.demoUrl ? (
+                    <VideoPreview
+                      title={`${project.title} Demo`}
+                      onClick={() => openVideoPlayer(project.demoUrl!, project.title)}
+                      className="w-full h-48"
+                    />
+                  ) : (
+                    <div className="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-purple-50 transition-all duration-500">
+                      <div className="text-slate-400 text-center">
+                        <div className="w-16 h-16 bg-slate-300 rounded-xl mx-auto mb-3 flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-500">
+                          <span className="text-2xl font-bold text-slate-500 group-hover:text-blue-600">
+                            {project.title.charAt(0)}
+                          </span>
+                        </div>
+                        <p className="text-sm font-medium">Project Preview</p>
                       </div>
-                      <p className="text-sm font-medium">Project Preview</p>
                     </div>
-                  </div>
+                  )}
 
                   <p className="text-slate-600 leading-relaxed">{project.description}</p>
 
@@ -185,16 +221,13 @@ const Home = () => {
                       <Github size={18} className="group-hover/link:scale-110 transition-transform duration-300" />
                       <span>Code</span>
                     </a>
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    {project.demoUrl && (
+                      <button
+                        onClick={() => openVideoPlayer(project.demoUrl!, project.title)}
                         className="btn-ghost group/link"
                       >
-                        <ExternalLink size={18} className="group-hover/link:scale-110 transition-transform duration-300" />
-                        <span>Live Demo</span>
-                      </a>
+                        <span>Video Demo</span>
+                      </button>
                     )}
                   </div>
                 </div>
@@ -213,6 +246,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Player Modal */}
+      <VideoPlayer
+        videoUrl={videoPlayer.videoUrl}
+        title={videoPlayer.title}
+        isOpen={videoPlayer.isOpen}
+        onClose={closeVideoPlayer}
+      />
     </div>
   );
 };
